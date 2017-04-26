@@ -26,7 +26,7 @@
 			</a>
 
 				<ul class="dropdown-menu" role="menu">
-					<li><a href="#">Add</a></li>
+					<li><a href="<spring:url value="/resource/add"/>">Add</a></li>
 					<li><a href="#">Find</a></li>
 				</ul></li>
 

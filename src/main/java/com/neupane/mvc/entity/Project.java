@@ -1,6 +1,7 @@
 package com.neupane.mvc.entity;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class Project {
 
@@ -10,7 +11,7 @@ public class Project {
 
 	private String description;
 
-	private String sponsor;
+	private Sponsor sponsor;
 
 	private BigDecimal authorizedHours;
 
@@ -21,6 +22,8 @@ public class Project {
 	private boolean special;
 
 	private String type;
+
+	private List<String> pointsOfContact;
 
 	public Long getProjectId() {
 		return projectId;
@@ -70,11 +73,11 @@ public class Project {
 		this.year = year;
 	}
 
-	public String getSponsor() {
+	public Sponsor getSponsor() {
 		return sponsor;
 	}
 
-	public void setSponsor(String sponsor) {
+	public void setSponsor(Sponsor sponsor) {
 		this.sponsor = sponsor;
 	}
 
@@ -92,6 +95,21 @@ public class Project {
 
 	public void setType(String type) {
 		this.type = type;
+	}
+
+	public List<String> getPointsOfContact() {
+		return pointsOfContact;
+	}
+
+	public void setPointsOfContact(List<String> pointsOfContact) {
+		this.pointsOfContact = pointsOfContact;
+	}
+
+	@Override
+	public String toString() {
+		return "Project [projectId=" + projectId + ", name=" + name + ", description=" + description + ", sponsor="
+				+ sponsor + ", authorizedHours=" + authorizedHours + ", authorizedFunds=" + authorizedFunds + ", year="
+				+ year + ", special=" + special + ", type=" + type + ", pointsOfContact=" + pointsOfContact + "]";
 	}
 
 }
