@@ -1,0 +1,42 @@
+.skin-green .wrapper, .skin-green .main-sidebar, .skin-green .left-side{
+	background-color: #E9E9E9;
+}
+
+.skin-green .sidebar a {
+    color: #2374B8;
+}
+
+.skin-green .sidebar-menu>li>.treeview-menu{
+	background: #F5F5F5;
+}
+
+.skin-green .sidebar a:hover { 
+    background-color: #F6F6F6;
+    color: #438A46;
+}
+
+.skin-green .sidebar-menu>li:hover>a, .skin-green .sidebar-menu>li.active>a {
+	background-color: #F6F6F6;
+	 color: #438A46;
+}
+
+.skin-green .treeview-menu>li.active>a, .skin-green .treeview-menu>li>a:hover {
+	color: #438A46;
+}
+
+.skin-green .sidebar-menu>li.header {
+    color: #438A46;
+    background: #F8F8F8;
+}
+
+.skin-green .treeview-menu>li>a {
+    color: #2374B8;
+}
+
+.logo{
+	height: 1000px;
+}
+
+body{
+	background-color: #EEEEEE;
+}

@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+h1 {
+	font-size: 26px;
+}
+
+label {
+	font-size: 12px;
+}
+
+i {
+	margin-right: 2px;
+}
+
+.breadcrumb {
+	font-size: 12px;
+}
+
+.well {
+	margin-bottom: 10px;
+	padding: 10px;
+	padding-bottom: 5px;
+}
+
+.page-header {
+	margin-top: 12px;
+}
+
+.input-sm {
+	height: 30px;
+}
+
+.form-group {
+	margin-bottom: 5px;
+}
+
+.nav.nav-tabs {
+	font-size: 12px;
+}
+
+.panel.panel-default .panel-heading .panel-title {
+	font-size: 14px;
+}
+
+.panel.panel-default .panel-body {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.container-frame {
+	margin-top: 50px;
+}
+
+.margin-top-10 {
+	margin-top: -42px;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+
+.icon-drawer {
+	font-size: 20px;
+	margin-top: 2px;
+	margin-right: 10px;
+	padding: 10px;
+	color: #FFF;
+	float: left;
+}
+
+.icon-drawer .icon-bar {
+	margin: 5px auto;
+	background-color: #fff;
+	border-radius: 1px;
+	display: block;
+	height: 2px;
+	width: 22px;
+}
+
+.nav-drawer {
+	padding: 0px;
+	position: fixed;
+	top: 50px;
+	bottom: 0;
+	left: 0;
+	display: block;
+	overflow-x: hidden;
+	overflow-y: auto;
+	/* Scrollable contents if viewport is shorter than content. */
+	background-color: #404F47;
+}
+
+.nav-drawer .navbar-default {
+	border-radius: 0px;
+	border: none;
+	background-color: #404F47;
+}
+
+.nav-drawer .navbar-default .nav-stacked li a {
+	color: #eee;
+}
+
+.nav-drawer .navbar-default .nav-stacked li a:hover, .nav-drawer .navbar-default .nav-stacked li a:focus
+	{
+	background-color: #5E7268;
+}
+
+.nav-drawer .navbar-default .nav-stacked .panel {
+	margin: 0px;
+	border: none;
+	border-radius: 0px;
+	background-color: #5E7268;
+	box-shadow: none;
+}
+
+.nav-drawer .navbar-default .nav-stacked .panel a.collapsed {
+	background-color: #404F47;
+}
+
+.nav-drawer .navbar-default .nav-stacked .panel ul.nav-stacked li a {
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.nav-drawer .navbar-default .nav-stacked .panel ul.nav-stacked li ul.nav-stacked li a
+	{
+	padding-left: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 12px;
+}
+
+.header .navbar-default {
+	background-color: #1FAB68;
+	border: none;
+}
+
+.header .navbar-header .navbar-brand {
+	color: #fff;
+}
+
+.header .navbar-header .navbar-toggle {
+	border-radius: 0px;
+}
+
+.header .navbar-header .navbar-toggle:hover, .header .navbar-header .navbar-toggle:focus
+	{
+	background-color: #1FAB68;
+}
+
+.header .navbar-header .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.header .navbar-default .navbar-nav li a {
+	color: #FFFFFF;
+}
+
+.header .navbar-default .navbar-nav li.active a {
+	background-color: #3CBA7D;
+}
+
+.header .navbar-default .navbar-nav li a:hover, .header .navbar-default .navbar-nav li a:focus,
+	.header .navbar-default .navbar-nav li.active a:hover, .header .navbar-default .navbar-nav li.active a:focus
+	{
+	color: #fff;
+}
+
+.header .navbar-default .navbar-nav li.dropdown ul.dropdown-menu li a {
+	background-color: #fff;
+	color: #666;
+}
+
+.header .navbar-default .navbar-nav li.dropdown ul.dropdown-menu li a:hover
+	{
+	background-color: #F5F5F5;
+}
+
+.header .navbar-default .navbar-nav li.dropdown.open a {
+	background-color: #3CBA7D;
+}
+
+.form_login {
+	margin-top: 100px;
+	padding: 20px;
+}
+
+.form_signup {
+	top: 30%;
+	left: 50%;
+	margin-top: 10px;
+	padding: 20px;
+}
+
+.form_signup .form-control {
+	height: 38px;
+}
+
+.form_login .form-control {
+	height: 38px;
+}
+
+.pull-none {
+	margin-right: auto;
+	margin-left: auto;
+	float: none;
+}
+
+/*Jasman Shakya */
+.form-group {
+	padding-bottom: 2px;
+	margin: 10px 0 0 0;
+}
+
+.form-group.label-floating label.control-label, .form-group.label-placeholder label.control-label
+	{
+	font-size: 13px;
+}
+
+.form-control {
+	font-size: 13px;
+	color: grey;
+	height: 30px;
+}
+
+body .container .well, body .container-fluid .well, body .container .jumbotron,
+	body .container-fluid .jumbotron, body .container .well-default, body .container-fluid .well-default,
+	body .container .jumbotron-default, body .container-fluid .jumbotron-default
+	{
+	background-color: #FFFFF4;
+}
+
+.form_signup .input-group {
+	margin-right: -20px;
+}
+
+.form_login .input-group {
+	margin-right: -20px;
+}
+
+.sign_up_row {
+	margin: 0 3px 0 3px;
+}
+
+.delete {
+	cursor: pointer;
+}
+
+.table-responsive {
+	overflow-x: auto;
+}
+
+.table-responsive table th {
+	background-color: #008749;
+	color: #FAFAFA;
+}
+
+.loading {
+	opacity: 0.5;
+	background: url("../img/spin.gif") no-repeat;
+	background-position: center;
+}
+
+.multiselect {
+	width: 200px;
+}
+
+.selectBox {
+	position: relative;
+}
+
+.selectBox select {
+	width: 100%;
+	font-weight: bold;
+}
+
+.overSelect {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+#checkboxes {
+	display: none;
+	border: 1px #dadada solid;
+}
+
+#checkboxes label {
+	display: block;
+}
+
+#checkboxes label:hover {
+	background-color: #1e90ff;
+}
+
+input[type=checkbox], input[type=radio] {
+	margin-left: 10px;
+}

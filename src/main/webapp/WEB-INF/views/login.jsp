@@ -12,11 +12,6 @@
 </script>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link rel="stylesheet"
-	href="<spring:url value="/resources/css/bootstrap-select.min.css"/>"
-	type="text/css" />
-<link rel="stylesheet"
-	href="<spring:url value="/resources/css/global.css"/>" type="text/css" />
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script
@@ -104,7 +99,7 @@
 			$
 					.ajax({
 						url : '${pageContext.request.contextPath}/api/auth/login?myValue='
-								+jsonData,
+								+ jsonData,
 						type : 'POST',
 						dataType : 'json',
 						data : {

@@ -22,34 +22,28 @@ public class ResourceController {
 
 	@RequestMapping("/add")
 	public String add(Model model) {
-		System.out.println("Invoking add()");
 		return "resource_add";
 	}
 
 	@RequestMapping("/request")
 	@ResponseBody
 	public String request(@RequestBody String resource) {
-		System.out.println(resource);
 		return "The request has been sent for approval";
 	}
 
 	@RequestMapping("/review")
 	public String review(@ModelAttribute Resource resource) {
-		System.out.println("Invoking review()");
 		return "resource_review";
 	}
 
 	@RequestMapping("/save")
 	public String save(@ModelAttribute Resource resource, SessionStatus status) {
-		System.out.println("Invoking save()");
-		System.out.println(resource);
 		status.setComplete();
 		return "redirect:/resource/add";
 	}
 
 	@ModelAttribute("resource")
 	public Resource getResource() {
-		System.out.println("Adding a new resource to the model");
 		return new Resource();
 	}
 
