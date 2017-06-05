@@ -2,19 +2,16 @@ package com.neupane.mvc.entity;
 
 public class Login {
 
-	private String id;
+	private double code;
 	private String username;
 	private String password;
-	private String name;
-	private int branchId;
-	private String companyId;
 
-	public String getId() {
-		return id;
+	public double getCode() {
+		return code;
 	}
 
-	public void setId(String id) {
-		this.id = id;
+	public void setCode(double code) {
+		this.code = code;
 	}
 
 	public String getUsername() {
@@ -31,35 +28,6 @@ public class Login {
 
 	public void setPassword(String password) {
 		this.password = password;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public int getBranchId() {
-		return branchId;
-	}
-
-	public void setBranchId(int branchId) {
-		this.branchId = branchId;
-	}
-
-	public String getCompanyId() {
-		return companyId;
-	}
-
-	public void setCompanyId(String companyId) {
-		this.companyId = companyId;
-	}
-
-	@Override
-	public String toString() {
-		return super.toString();
 	}
 
 }

@@ -6,34 +6,37 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import org.codehaus.jettison.json.JSONObject;
+import org.json.JSONObject;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.neupane.mvc.dbconnection.MasterDbConnection;
-import com.neupane.mvc.entity.MasterDb;
 
 /*
  * @Author pralad neupane
  * 
  */
-
 @Controller
 @RequestMapping("/api/auth")
 public class LoginWs {
 
 	private static String dbName = null;
 
+	@SuppressWarnings("unchecked")
 	@RequestMapping(value = "/login")
-	public String openMultipleConnection(@RequestParam MasterDb masterDb) {
+	@ResponseBody
+	public ResponseEntity<String> openMultipleConnection(@RequestParam("myValue") String myValue) {
 
-		System.out.println(masterDb.getDatabaseCode());
+		JSONObject jsonObject = new JSONObject(myValue);
+		String dbCode = jsonObject.get("code").toString();
 
 		try (Connection con = MasterDbConnection.getConnection()) {
-			JSONObject jsonObject = new JSONObject();
+
 			PreparedStatement stmt = con.prepareStatement("SELECT * from apex where dbcode = ?");
-			stmt.setString(1, "6000");
+			stmt.setString(1, dbCode);
 			ResultSet rs = stmt.executeQuery();
 
 			while (rs.next()) {
@@ -44,13 +47,11 @@ public class LoginWs {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		// return new ResponseEntity<String>("message", HttpStatus.OK);
-		return null;
-
+		System.out.println("ok.......................");
+		return ResponseEntity.ok("name");
 	}
 
 	public Connection getChieldConnection() {
-		System.out.println("chield db name " + dbName);
 		Connection con = null;
 		try {
 			Class.forName("org.postgresql.Driver");

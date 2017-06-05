@@ -16,7 +16,6 @@ public class HomeController {
 		project.setName("First Project");
 		project.setSponsor(new Sponsor("NASA", "555-555-5555", "nasa@nasa.com"));
 		project.setDescription("This is a simple project");
-
 		model.addAttribute("currentProject", project);
 		return "home";
 	}

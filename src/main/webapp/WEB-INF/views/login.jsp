@@ -111,8 +111,8 @@
 							myData : jsonData
 						},
 						contentType : 'application/json',
-						success : function(response) {
-							if (response.status === 201) {
+						complete : function(response) {
+							if (response.status === 200) {
 								location.href = "${pageContext.request.contextPath}/";
 							} else {
 								var data = response.responseJSON;
